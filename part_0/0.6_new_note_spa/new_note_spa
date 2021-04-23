@@ -1,0 +1,18 @@
+note over browser:
+user submits new note to form
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+form POSTS to server in JSON format per JS code
+content && date
+end note
+server-->browser: returns code 201
+note over browser:
+JS code executes to fetch submitted note
+e.preventDefault() is immediately called to prevent
+a new GET request
+JS code executes to submit note to array and more
+code to send to server and re-render display of page
+end note
+
